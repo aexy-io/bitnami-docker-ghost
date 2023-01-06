@@ -314,6 +314,7 @@ ghost_initialize() {
                 ghost_conf_set "mail.options.secureConnection" "$([[ "$GHOST_SMTP_PROTOCOL" = "ssl" || "$GHOST_SMTP_PROTOCOL" = "tls" ]] && echo "true" || echo "false")" "bool"
                 ghost_conf_set "mail.options.auth.user" "$GHOST_SMTP_USER"
                 ghost_conf_set "mail.options.auth.pass" "$GHOST_SMTP_PASSWORD"
+                ghost_conf_set "mail.options.service" "$GHOST_SMTP_SERVICE"
             fi
             # Configure Admin account
             ghost_pass_wizard

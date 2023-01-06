@@ -313,6 +313,8 @@ ghost_initialize() {
                 ghost_conf_set "mail.options.port" "$GHOST_SMTP_PORT_NUMBER" "int"
                 ghost_conf_set "mail.options.secureConnection" "$([[ "$GHOST_SMTP_PROTOCOL" = "ssl" || "$GHOST_SMTP_PROTOCOL" = "tls" ]] && echo "true" || echo "false")" "bool"
                 ghost_conf_set "mail.options.auth.user" "$GHOST_SMTP_USER"
+                ghost_conf_set "mail.options.service" "$GHOST_SMTP_SERVICE"
+                
                 ghost_conf_set "mail.options.auth.pass" "$GHOST_SMTP_PASSWORD"
             fi
             # Configure Admin account

@@ -291,6 +291,7 @@ This would be an example of SMTP configuration using a Gmail account:
           - GHOST_SMTP_USER=your_email@gmail.com
           - GHOST_SMTP_PASSWORD=your_password
           - GHOST_SMTP_FROM_ADDRESS=ghost@blog.com
+          - GHOST_SMTP_SERVICE=gmail
       ...
     ```
 

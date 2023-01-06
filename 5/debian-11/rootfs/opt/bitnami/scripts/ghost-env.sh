@@ -36,6 +36,7 @@ ghost_env_vars=(
     GHOST_SMTP_HOST
     GHOST_SMTP_PORT_NUMBER
     GHOST_SMTP_USER
+    GHOST_SMTP_SERVICE
     GHOST_SMTP_PASSWORD
     GHOST_SMTP_PROTOCOL
     GHOST_DATABASE_HOST
@@ -115,6 +116,7 @@ GHOST_SMTP_PASSWORD="${GHOST_SMTP_PASSWORD:-"${SMTP_PASSWORD:-}"}"
 export GHOST_SMTP_PASSWORD="${GHOST_SMTP_PASSWORD:-}" # only used during the first initialization
 GHOST_SMTP_PROTOCOL="${GHOST_SMTP_PROTOCOL:-"${SMTP_PROTOCOL:-}"}"
 export GHOST_SMTP_PROTOCOL="${GHOST_SMTP_PROTOCOL:-}" # only used during the first initialization
+export GHOST_SMTP_SERVICE="${GHOST_SMTP_SERVICE:-}" # only used during the first initialization
 
 # Database configuration
 export GHOST_DEFAULT_DATABASE_HOST="mysql" # only used at build time
